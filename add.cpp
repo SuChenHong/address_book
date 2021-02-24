@@ -18,12 +18,12 @@ Add::Add(QWidget *parent) :
     basicWindow * openWindow = new basicWindow();
     //添加数据
     connect(ui->btn_save,&QPushButton::clicked,[=](){
-       const int min = 8;
-       const int max = 11;
+//       const int min = 8;
+//       const int max = 11;
        QString name = ui->lineEdit_name->text();
        QString sex = ui->lineEdit_sex->text();
        QString number = ui->lineEdit_number->text().toUtf8().data();
-       int tmp = number.count();
+//       int tmp = number.count();
        if(name == "" || sex == "" || number == "")
        {
            QMessageBox::critical(this,"错误提示","内容均不能为空");
@@ -31,11 +31,11 @@ Add::Add(QWidget *parent) :
            ui->lineEdit_name->clear();
            ui->lineEdit_number->clear();
        }
-       else if(tmp < min || tmp > max)
-       {
-           QMessageBox::critical(this,"错误提示","电话号码只能为8位或11位");
-           ui->lineEdit_number->clear();
-       }
+//       else if(tmp < min || tmp > max)
+//       {
+//           QMessageBox::critical(this,"错误提示","电话号码只能为8位或11位");
+//           ui->lineEdit_number->clear();
+//       }
        else
        {
            QString *insert_sql = new QString();

@@ -26,7 +26,7 @@ public:
     void helpExplain(); //系统使用说明
     //void createTable(); //创建表格
     void DoubleClickToShowInfomation(); //双击查看信息
-    void newDialog();
+    void changeData(); //修改信息
     //void mousePressEvent(QMouseEvent *event);
 
 private:
