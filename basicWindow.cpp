@@ -346,43 +346,6 @@ void basicWindow::DoubleClickToShowInfomation()
                 edit_num->setText("");
                 edit_num->setGeometry(149,159,159,20);
 
-
-//                QString oldName = ui->listWidget->item(second_click)->text();
-//                QString oldSex = Sex;
-//                QString oldNum = Num;
-//                connect(btn0,&QPushButton::clicked,[=](){
-//                    QString newName = edit_name->text(); //获取名字
-//                    QString newSex = edit_sex->text();
-//                    QString newNum = edit_num->text();
-
-//                    QSqlQuery * sql_query = new QSqlQuery();
-//                    QString * update_sql = new QString();
-//                    if(oldName!=newName)
-//                    {
-//                       *update_sql = QString("update person set name = %1 where name = %2;").arg(newName).arg(oldName);
-//                    }
-//                    if(oldSex!=newSex)
-//                    {
-//                        *update_sql = QString("update person set sex = %1 where name = %2;").arg(newSex).arg(oldName);
-//                    }
-//                    if(oldNum!=newNum)
-//                    {
-//                        *update_sql = QString("update person set number = %1 where name = %2;").arg(newNum).arg(oldName);
-//                    }
-//                    sql_query->prepare(*update_sql);
-//                    if(!sql_query->exec())
-//                    {
-//                        qDebug() << sql_query->lastError();
-//                    }
-//                    else
-//                    {
-//                        QMessageBox::information(dlg,"提示","修改成功！");
-//                        qDebug() << "update successfully";
-//                    }
-
-
-//                });
-
                 connect(btn,&QPushButton::clicked,[=](){
                     QMessageBox::information(dlg,"信息","该功能暂未实现，后续持续上线！");
                 });
