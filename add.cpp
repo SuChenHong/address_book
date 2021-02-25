@@ -38,7 +38,6 @@ Add::Add(QWidget *parent) :
            openWindow->show();
            openWindow->setAttribute(Qt::WA_DeleteOnClose);
 
-
        }
 
     });
